@@ -46,7 +46,7 @@ State DB의 값에 체인코드가 실제로 실행되며 결과값, read/write 
 ### 2.5 Client A가 Proposal responses 검토
 
 클라이언트 SDK는 Proposal response의 Endorsing peer의 서명을 확인한 뒤 각 피어로부터의 Proposal resopnse를 비교한다.
-단순한 쿼리 같이 Ordering service가 필요 없는 경우에는 쿼리의 결과 값을 얻고 프로세스를 종료한다. (READ)
+단순한 쿼리 같이 Ordering service가 필요 없는 경우에는 쿼리의 결과 값을 얻고 프로세스를 종료한다.
 원장 업데이트를 해야할 경우, 클라이언트 차원에서 Endorsement policy에 전하는 Proposal response가 왔는지 검토한다.
 이 단계에서 클라이언트가 endorsement policy를 검토하지 않는다해도, committing 단계에서 각 피어가 별도로 검토한다.
 
